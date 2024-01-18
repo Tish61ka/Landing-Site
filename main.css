@@ -1,0 +1,1302 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style-type: none;
+      text-decoration: none;
+      background-repeat: no-repeat;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  span,
+  div {
+      font-family: "Montserrat", sans-serif;
+  }
+
+  a {
+      cursor: pointer;
+  }
+
+  html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+  }
+
+  :root {
+      --main-bg-color: black;
+      --second-color: #06FF79;
+      --main-txt-color: #ffffff;
+  }
+
+  body {
+      background-color: var(--main-bg-color);
+  }
+
+  .container {
+      width: 1650px;
+      margin: 0 auto;
+  }
+
+  .backgtound-main {
+      position: absolute;
+      width: 100vw;
+  }
+
+  .flex {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+  }
+
+  .flex svg:first-child {
+      margin-top: 96px;
+  }
+
+  .flex svg:not(:first-child) {
+      margin-top: 137px;
+  }
+
+  .flex svg:last-child {
+      margin-top: 237px;
+  }
+
+
+  .flex-v {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      z-index: 5;
+      margin-left: 74px;
+  }
+
+  .flex-v svg:first-child {
+      margin-right: 219px;
+  }
+
+  .flex-v svg:nth-child(3) {
+      margin-left: 187px;
+  }
+
+  .flex-v svg:last-child {
+      margin-top: 200px;
+      margin-left: 387px;
+  }
+
+  .circle-sec-1 {
+      position: absolute;
+      left: -542px;
+      top: 257px;
+      z-index: 0;
+      width: 764px;
+      height: 730px;
+      flex-shrink: 0;
+      border-radius: 764px;
+      background: #00AF51;
+      filter: blur(300px);
+  }
+
+  .flex-v-l {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      right: 290px;
+      top: 0;
+  }
+
+  .flex-v-l svg:first-child {
+      margin-right: 187px;
+  }
+
+  .flex-v-l svg:last-child {
+      margin-left: 342px;
+  }
+
+  .backgtound-main img {
+      position: absolute;
+      right: 105px;
+      top: 0px;
+      z-index: -2;
+      opacity: 0;
+      transition: 5s;
+  }
+
+
+  header {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-left: 105px;
+      padding-right: 90px;
+      padding-top: 17px;
+      z-index: 10;
+  }
+
+  header nav {
+      width: 35%;
+  }
+
+  header nav ul {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      width: 100%;
+  }
+
+  header nav ul li {
+      color: var(--main-txt-color);
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      transition: 0.5s;
+      cursor: pointer;
+      margin-right: 75px;
+  }
+
+  header nav ul li:hover {
+      color: var(--second-color);
+  }
+
+  header div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  header div button:first-child {
+      margin-right: 35px;
+      color: #000;
+      border-radius: 15px;
+      padding: 10px 20px;
+      background: #06FF79;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+  }
+
+  header div button:last-child {
+      padding: 10px 14px;
+      border-radius: 30px;
+      border: 1px solid #06FF79;
+      background: transparent;
+      color: #FFF;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      cursor: pointer;
+  }
+
+
+  .section-1 {
+      position: relative;
+      display: grid;
+      grid-template-columns: 74px 219px 187px 387px 1fr;
+      grid-template-rows: 137px 237px 191px;
+      z-index: 100;
+      margin-top: 23px;
+      opacity: 0;
+      transition: 5s;
+  }
+
+  .section-1>div:first-child {
+      grid-column: 2/ 5;
+      grid-row: 2/ 3;
+      padding-left: 22px;
+  }
+
+  .section-1 h1 {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 150px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      color: white;
+      background-clip: text;
+  }
+
+  .section-1 h1 svg {
+      position: absolute;
+      margin-top: 5px;
+      left: 585px;
+  }
+
+  .section-1>div>div {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .section-1>div>div h2 {
+      white-space: pre;
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 50.4%;
+  }
+
+  .section-1>div>div h2:first-child {
+      color: var(--main-txt-color);
+  }
+
+  .section-1>div>div h2:last-child {
+      color: var(--second-color);
+  }
+
+  .section-1>div:nth-child(2) {
+      grid-column: 2/ 5;
+      grid-row: 3/ 4;
+      padding-left: 22px;
+      padding-top: 30px;
+  }
+
+  .section-1>div:nth-child(2) p {
+      width: 90%;
+      color: var(--main-txt-color);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .section-1>div:nth-child(2) div {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .section-1>div:nth-child(2) div button {
+      width: 268px;
+      height: 50px;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      background: var(--main-bg-color);
+      color: var(--second-color);
+      border-radius: 30px;
+      border: 1px solid #06FF79;
+      margin-right: 40px;
+      margin-top: 36px;
+  }
+
+  .section-1>div:nth-child(2) div button:first-child {
+      color: var(--main-bg-color) !important;
+      background-color: var(--second-color) !important;
+  }
+
+  /* .next-block {
+      width: 31px;
+      height: 40px;
+      border-radius: 13px;
+      border: 3px solid transparent;
+      border-image: linear-gradient(#06FF79, #003619);
+      -moz-border-image: -moz-linear-gradient(#06FF79, #003619);
+      -webkit-border-image: -webkit-linear-gradient(#06FF79, #003619);
+      border-image-slice: 1;
+      background: #000;
+      margin-left: 500px;
+  } */
+  .next-block {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 200px;
+      z-index: 20;
+  }
+
+  .next-block svg {
+      cursor: pointer;
+  }
+
+  .section-2 {
+      position: relative;
+      margin-top: 215px;
+      padding-top: 20px !important;
+      padding: 0 164px;
+      margin-bottom: 300px;
+  }
+
+  .section-2>div:first-child {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      width: 100%;
+      height: 119px;
+      padding-right: 15px;
+      margin-bottom: 30px;
+  }
+
+  .section-2 div h1 {
+      background: linear-gradient(262deg, #FFF 37.74%, #FFF 98.52%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+  }
+
+  .section-2 div span {
+      background: none !important;
+      color: #06FF79 !important;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+  }
+
+  .flex-net {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .flex-net h2 {
+      color: var(--main-txt-color);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 20px;
+      margin-bottom: 8px;
+  }
+
+  .flex-net p {
+      color: #B5B5B5;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 47px;
+  }
+
+  .back-green {
+      position: absolute;
+      width: 764px;
+      height: 730px;
+      border-radius: 764px;
+      background: #00AF51;
+      filter: blur(300px);
+      bottom: -364px;
+      left: -764px;
+  }
+
+  .section-3 {
+      padding: 0 118px;
+  }
+
+  .faq {
+      width: 78px;
+      border-radius: 11px;
+      border: 1px solid rgba(6, 255, 121, 0.60);
+      color: rgba(6, 255, 121, 0.60);
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 15px;
+  }
+
+  .section-3>div:last-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .section-3>div:last-child div:first-child h1 {
+      width: 470px;
+      color: #FFF;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 20px;
+  }
+
+  .section-3>div:last-child div:first-child h1 span {
+      color: #06FF79 !important;
+  }
+
+  .section-3>div:last-child div:first-child p {
+      width: 500px;
+      color: var(--main-txt-color);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .section-3>div:last-child div:last-child {
+      width: 468px;
+  }
+
+  .section-3>div:last-child div:last-child details {
+      color: #B5B5B5;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-image: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.20) 19.27%, rgba(217, 217, 217, 0.20) 77.08%, rgba(217, 217, 217, 0.00) 100%) 100;
+  }
+
+  .section-3>div:last-child div:last-child details summary {
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 17px;
+  }
+
+  summary::-webkit-details-marker {
+      display: none
+  }
+
+  .section-3>div:last-child div:last-child details summary::before {
+      content: url("/image/arrow2.png");
+      float: right;
+  }
+
+  .section-3>div:last-child div:last-child details[open] summary::before {
+      content: url("/image/arrow.png");
+
+  }
+
+  .control {
+      position: relative;
+  }
+
+  .back-green-2 {
+      position: absolute;
+      width: 764px;
+      height: 730px;
+      border-radius: 764px;
+      background: #00AF51;
+      filter: blur(300px);
+      margin-top: 300px;
+      right: -764px;
+      z-index: 0;
+  }
+
+  .cost {
+      margin-top: 200px;
+      padding: 0 79px 0 157px;
+  }
+
+  .cost h1 {
+      color: var(--main-txt-color);
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      margin-bottom: 50px;
+  }
+
+  .cost h1 span {
+      color: var(--second-color) !important;
+  }
+
+  .cost>div {
+      display: grid;
+      grid-template-rows: 333px 229px;
+      grid-template-columns: 341px 341px 87px 553px;
+      grid-gap: 30px;
+      margin-bottom: 50px;
+  }
+
+  .cost>div>div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 15px;
+      padding: 24px 13px 20px 30px;
+      padding-top: 24px;
+      padding-left: 30px;
+      padding-bottom: 20px;
+  }
+
+  .cost>div>div>div:first-child>span {
+      color: var(--main-txt-color);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 10px;
+  }
+
+  .cost>div>div:first-child>div:first-child>span,
+  .cost>div>div:nth-child(2)>div:first-child>span {
+      font-size: 25px !important;
+  }
+
+  .cost>div>div h2 {
+      color: var(--main-txt-color);
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  }
+
+  .cost>div>div:first-child h2,
+  .cost>div>div:nth-child(2) h2 {
+      font-size: 65px;
+      font-weight: 700;
+  }
+
+  .cost>div>div p {
+      color: var(--main-txt-color);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .cost>div>div:first-child p,
+  .cost>div>div:nth-child(2) p {
+      font-size: 24px;
+  }
+
+  .cost>div>div>div:last-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .cost>div>div>div:last-child button {
+      border-radius: 5px;
+      background: var(--second-color);
+      padding: 11px 32px;
+      color: var(--main-bg-color);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+      border: none;
+  }
+
+  .cost>div>div:first-child div:last-child button,
+  .cost>div>div:nth-child(2) div:last-child button {
+      padding: 11px 60px;
+  }
+
+  .cost>div>div>div:last-child p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: var(--main-txt-color);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .cost>div>div:first-child div:last-child p,
+  .cost>div>div:nth-child(2) div:last-child p {
+      font-size: 30px;
+  }
+
+  .cost>div>div:nth-child(2) div:last-child,
+  .cost>div>div:last-child div:last-child {
+      justify-content: end;
+  }
+
+  .cost>div>div>div:last-child p span {
+      color: var(--second-color);
+      font-size: 35px;
+      font-weight: 700;
+      margin-left: 11px;
+      margin-right: 11px;
+  }
+
+  .cost>div>div:first-child div:last-child p span,
+  .cost>div>div:nth-child(2) div:last-child p span {
+      font-size: 75px;
+  }
+
+  .cost>div>div:first-child {
+      grid-row: 1/2;
+      grid-column: 1/3;
+      background: #1B1B1B;
+      padding: 34px 20px 15px 34px !important;
+  }
+
+  .cost>div>div:nth-child(2) {
+      grid-row: 1/2;
+      grid-column: 3/5;
+      border: 1px solid #06FF79;
+      background: linear-gradient(105deg, #06FF79 2.58%, rgba(0, 0, 0, 0.01) 28.17%, rgba(217, 217, 217, 0.00) 98.94%);
+      padding: 34px 20px 15px 34px !important;
+  }
+
+  .cost>div>div:nth-child(3) {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      background: #1B1B1B;
+  }
+
+  .cost>div>div:nth-child(4) {
+      grid-row: 2/3;
+      grid-column: 2/4;
+      background: #1B1B1B;
+  }
+
+  .cost>div>div:last-child {
+      grid-row: 2/2;
+      grid-column: 4/5;
+      border: 1px solid #06FF79;
+      background: linear-gradient(107deg, #06FF79 0%, rgba(0, 0, 0, 0.02) 31.77%, rgba(255, 255, 255, 0.00) 100%);
+  }
+
+  .steps {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 300px;
+  }
+
+  .steps h1 {
+      position: absolute;
+      background: linear-gradient(262deg, #FFF 37.74%, #FFF 98.52%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      right: 470px;
+  }
+
+  .steps h1 svg {
+      position: absolute;
+      top: 5px;
+  }
+
+  .steps h1 p span {
+      background: #06FF79;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 43px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+  }
+
+  .steps h1 p {
+      background: linear-gradient(262deg, #FFF 37.74%, #FFF 98.52%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 43px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+  }
+
+  .step-1 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: 119px;
+  }
+
+  .step-1 h2 {
+      background: linear-gradient(180deg, rgba(6, 255, 121, 0.42) 0.2%, rgba(6, 255, 121, 0.06) 104.54%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 117.4%;
+      -webkit-text-stroke: #06FF79 2px;
+      /* 234.8px */
+  }
+
+  .step-1 h3 {
+      color: #FFF;
+      width: 320px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      margin-bottom: 20px;
+      /* 46.96px */
+  }
+
+  .step-1 div {
+      position: relative;
+      left: 0px;
+  }
+
+  .step-1 svg {
+      position: absolute;
+      top: -45px;
+      left: -120px;
+  }
+
+  .step-1 p {
+      width: 455px;
+      color: #C7C7C7;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .step-2 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: 35px;
+      top: 220px;
+  }
+
+  .step-2 h2 {
+      background: linear-gradient(180deg, rgba(6, 255, 121, 0.42) 0.2%, rgba(6, 255, 121, 0.06) 104.54%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 117.4%;
+      -webkit-text-stroke: #06FF79 2px;
+      /* 234.8px */
+  }
+
+  .step-2 h3 {
+      color: #FFF;
+      width: 320px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      margin-bottom: 20px;
+      /* 46.96px */
+  }
+
+  .step-2 div {
+      position: relative;
+      left: 0px;
+  }
+
+  .step-2 svg {
+      position: absolute;
+      top: -45px;
+      left: -120px;
+  }
+
+  .step-2 p {
+      width: 402px;
+      color: #C7C7C7;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .step-3 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: 119px;
+      top: 700px;
+  }
+
+  .step-3 h2 {
+      background: linear-gradient(180deg, rgba(6, 255, 121, 0.42) 0.2%, rgba(6, 255, 121, 0.06) 104.54%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 117.4%;
+      -webkit-text-stroke: #06FF79 2px;
+      /* 234.8px */
+  }
+
+  .step-3 h3 {
+      color: #FFF;
+      width: 320px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      margin-bottom: 20px;
+      /* 46.96px */
+  }
+
+  .step-3 div {
+      position: relative;
+      left: 0px;
+  }
+
+  .step-3 svg {
+      position: absolute;
+      top: -45px;
+      left: -120px;
+  }
+
+  .step-3 p {
+      width: 448px;
+      color: #C7C7C7;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .step-4 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: 35px;
+      top: 920px;
+  }
+
+  .step-4 h2 {
+      background: linear-gradient(180deg, rgba(6, 255, 121, 0.42) 0.2%, rgba(6, 255, 121, 0.06) 104.54%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 117.4%;
+      -webkit-text-stroke: #06FF79 2px;
+      /* 234.8px */
+  }
+
+  .step-4 h3 {
+      color: #FFF;
+      width: 320px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      margin-bottom: 20px;
+      /* 46.96px */
+  }
+
+  .step-4 div {
+      position: relative;
+      left: 0px;
+  }
+
+  .step-4 svg {
+      position: absolute;
+      top: -45px;
+      left: -120px;
+  }
+
+  .step-4 p {
+      width: 382px;
+      color: #C7C7C7;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .step-5 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: 119px;
+      top: 1400px;
+  }
+
+  .step-5 h2 {
+      background: linear-gradient(180deg, rgba(6, 255, 121, 0.42) 0.2%, rgba(6, 255, 121, 0.06) 104.54%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 117.4%;
+      -webkit-text-stroke: #06FF79 2px;
+      /* 234.8px */
+  }
+
+  .step-5 h3 {
+      color: #FFF;
+      width: 348px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      margin-bottom: 20px;
+      /* 46.96px */
+  }
+
+  .step-5 div {
+      position: relative;
+      left: 0px;
+  }
+
+  .step-5 svg {
+      position: absolute;
+      top: -45px;
+      left: -120px;
+  }
+
+  .step-5 p {
+      width: 448px;
+      color: #C7C7C7;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .step-6 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: 35px;
+      bottom: 90px;
+  }
+
+  .step-6 h2 {
+      background: linear-gradient(180deg, rgba(6, 255, 121, 0.42) 0.2%, rgba(6, 255, 121, 0.06) 104.54%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 117.4%;
+      -webkit-text-stroke: #06FF79 2px;
+      /* 234.8px */
+  }
+
+  .step-6 h3 {
+      color: #FFF;
+      width: 320px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 117.4%;
+      margin-bottom: 20px;
+      /* 46.96px */
+  }
+
+  .step-6 div {
+      position: relative;
+      left: 0px;
+  }
+
+  .step-6 svg {
+      position: absolute;
+      top: -45px;
+      left: -120px;
+  }
+
+  .step-6 p {
+      width: 382px;
+      color: #C7C7C7;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .contacts {
+      margin-top: 100px;
+  }
+
+  .contacts div {
+      position: relative;
+  }
+
+  .contacts div>svg {
+      position: absolute;
+      top: -56px;
+      left: 10px;
+  }
+
+  .contacts div h1 {
+      position: relative;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 150px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-left: 114px;
+  }
+
+  .contacts div h1 span {
+      color: #06FF79 !important;
+      font-family: Montserrat;
+      font-size: 150px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }
+
+  .contacts div h1 svg {
+      position: absolute;
+      top: 16px;
+  }
+
+  .contacts>div:last-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 150px;
+      padding-right: 256px;
+      margin-top: 20px;
+      margin-bottom: 200px;
+  }
+
+
+  .contacts>div:last-child div p:first-child {
+      color: #FFF;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+  }
+
+  .contacts>div:last-child div p:last-child {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 53px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+  }
+
+  .contacts>div:last-child form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 500px;
+  }
+
+  .contacts>div:last-child form input[type=email],
+  .contacts>div:last-child form input[type=text] {
+      width: 100%;
+      height: 55px;
+      border-radius: 11px;
+      border: 1px solid rgba(255, 255, 255, 0.40);
+      padding-left: 17px;
+      outline: none;
+      background: transparent;
+
+      color: white;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  }
+
+  .contacts>div:last-child form input[type=email]::placeholder,
+  .contacts>div:last-child form input[type=text]::placeholder,
+  .contacts>div:last-child form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.50);
+  }
+
+  .contacts>div:last-child form textarea {
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.40);
+      resize: none;
+      color: white;
+      font-family: Montserrat;
+      background: transparent;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-left: 17px;
+      outline: none;
+      padding-top: 19px;
+  }
+
+  .contacts>div:last-child form input[type=file]::file-selector-button {
+      border: none;
+      background: transparent;
+  }
+
+  .onfile {
+      position: relative;
+  }
+
+  .contacts>div:last-child form input[type=file]::before {
+      content: "+";
+      color: var(--second-color);
+      font-family: Montserrat;
+      font-size: 32px;
+      font-weight: 300;
+      cursor: pointer;
+  }
+
+  .contacts>div:last-child form input[type=file]::after {
+      content: 'Прикрепить файл';
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: absolute;
+      left: 32px;
+      top: 10px;
+      cursor: pointer;
+  }
+
+  .contacts>div:last-child form button {
+      height: 55px;
+      background: transparent;
+      border-radius: 30px;
+      border: 1px solid #06FF79;
+      color: #06FF79;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+  }
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      padding-right: 255px;
+      padding-left: 234px;
+  }
+
+  footer div:first-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+  }
+
+  footer div:first-child nav ul {
+      width: 540px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  footer div:first-child nav ul li {
+      color: #FFF;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  footer div:first-child button {
+      padding: 10px 14px;
+      border-radius: 30px;
+      border: 1px solid #06FF79;
+      background: transparent;
+      color: #FFF;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      cursor: pointer;
+  }
+
+  footer div:last-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 70px;
+  }
+
+  footer div:last-child a,
+  footer div:last-child span {
+      color: #727272;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  footer div:last-child span {
+      margin: 0 40px;
+  }
+
+  footer div:last-child p {
+      color: #646464;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
