@@ -130,7 +130,7 @@
   }
 
 
-  header {
+  .computer-header {
       position: relative;
       display: flex;
       flex-direction: row;
@@ -143,18 +143,18 @@
       z-index: 10;
   }
 
-  header nav {
+  .computer-header nav {
       width: 35%;
   }
 
-  header nav ul {
+  .computer-header nav ul {
       display: flex;
       flex-direction: row;
       /* justify-content: space-between; */
       width: 100%;
   }
 
-  header nav ul li {
+  .computer-header nav ul li {
       color: var(--main-txt-color);
       text-align: center;
       font-size: 20px;
@@ -166,18 +166,18 @@
       margin-right: 75px;
   }
 
-  header nav ul li:hover {
+  .computer-header nav ul li:hover {
       color: var(--second-color);
   }
 
-  header div {
+  .computer-header div {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
   }
 
-  header div button:first-child {
+  .computer-header div button:first-child {
       margin-right: 35px;
       color: #000;
       border-radius: 15px;
@@ -191,7 +191,7 @@
       cursor: pointer;
   }
 
-  header div button:last-child {
+  .computer-header div button:last-child {
       padding: 10px 14px;
       border-radius: 30px;
       border: 1px solid #06FF79;
@@ -324,6 +324,50 @@
       justify-content: center;
       margin-top: 200px;
       z-index: 20;
+  }
+
+  .next-block>div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 135px;
+      height: 135px;
+  }
+
+  .next-block>div>div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 73px;
+      height: 73px;
+      border: 1px solid rgba(6, 255, 121, 0.30);
+      border-radius: 50%;
+  }
+
+  .next-block>div>div:hover {
+      animation: pulse 1.2s linear infinite;
+  }
+
+  @keyframes pulse {
+      from {
+          width: 73px;
+          height: 73px;
+          border: 1px solid rgba(6, 255, 121, 0.30);
+      }
+
+      50% {
+          width: 100px;
+          height: 100px;
+          border: 1px solid rgba(6, 255, 121, 0.12);
+      }
+
+      to {
+          width: 135px;
+          height: 135px;
+          border: 1px solid rgba(6, 255, 121, 0.02);
+      }
   }
 
   .next-block svg {
@@ -1299,4 +1343,284 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+  }
+
+  .mobile-header {
+      display: none;
+  }
+
+  @media screen and (max-width: 431px) {
+      .container {
+          width: 280px;
+          margin: 0 auto;
+      }
+
+      .computer-header {
+          display: none;
+      }
+
+      .mobile-header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding: 10px 0;
+      }
+
+      .mobile-header svg {
+          width: 97px;
+          height: 35px;
+      }
+
+      .mobile-header div {
+          width: 30px;
+          height: 22px;
+          background-color: white;
+      }
+
+      .flex,
+      .flex-v,
+      .flex-v-l {
+          display: none;
+      }
+
+      /*????????????????*/
+      .circle-sec-1 {
+          left: -250px;
+          top: 227px;
+          z-index: 0;
+          width: 284px;
+          height: 272px;
+          border-radius: 284px;
+          filter: blur(125px);
+      }
+
+      .backgtound-main img {
+          width: 390px;
+          height: 390px;
+          right: -153px;
+          top: -114px;
+      }
+
+      .section-1 {
+          display: block;
+          margin-top: 120px;
+      }
+
+      .section-1 h1 {
+          font-size: 50px;
+      }
+
+      .section-1 h1 svg {
+          width: 67px;
+          height: 51.861px;
+          margin-top: 2px;
+          left: 200px;
+      }
+
+      .section-1>div>div h2 {
+          font-size: 18px;
+          line-height: 117.4%;
+      }
+
+      .section-1>div:nth-child(2) p {
+          width: 100%;
+          font-size: 12px;
+      }
+
+      .section-1>div:nth-child(2) div button {
+          width: 116px;
+          height: 25.565px;
+          font-size: 9px;
+          margin-top: 22px;
+          margin-top: 30px;
+      }
+
+      .next-block {
+          margin-top: 65px;
+      }
+
+
+      .section-2 {
+          width: 100%;
+          padding: 0;
+          margin-top: 4px;
+          margin-bottom: 40px;
+      }
+
+      .section-2>div:first-child {
+          height: 119px;
+          padding-right: 0px;
+          margin-bottom: 0px;
+      }
+
+      .section-2 div h1 {
+          font-size: 35px;
+      }
+
+      .section-2 div span {
+          font-size: 35px;
+      }
+
+      .section-2>div:first-child svg {
+          width: 45px;
+          height: 38.333px;
+      }
+
+      .flex-net {
+          flex-direction: column;
+      }
+
+      .flex-net div,
+      .flex-net div img {
+          width: 100%;
+      }
+
+      .flex-net div h2 {
+          font-size: 15px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+      }
+
+      .flex-net div p {
+          font-size: 12px;
+          margin-bottom: 22px;
+      }
+
+      .back-green {
+          width: 284px;
+          height: 272px;
+          border-radius: 284px;
+          filter: blur(125px);
+          left: -300px;
+          bottom: 89px;
+      }
+
+      .section-3 {
+          padding: 0;
+      }
+
+      .faq {
+          width: 51px;
+          color: rgba(6, 255, 121, 0.60);
+          font-size: 10px;
+      }
+
+      .section-3>div:last-child {
+          flex-direction: column;
+      }
+
+      .section-3>div:last-child div:first-child {
+          margin-bottom: 40px;
+      }
+
+      .section-3>div:last-child div:first-child h1 {
+          width: 100%;
+          font-size: 25px;
+          margin-bottom: 13px;
+      }
+
+      .section-3>div:last-child div:first-child p {
+          width: 100%;
+          font-size: 15px;
+      }
+
+      .section-3>div:last-child div:last-child {
+          width: 100%;
+      }
+
+      .section-3>div:last-child div:last-child details {
+          font-size: 12px;
+      }
+
+      .section-3>div:last-child div:last-child details summary {
+          font-size: 13px;
+      }
+
+      .back-green-2 {
+          width: 284px;
+          height: 272px;
+          border-radius: 284px;
+          background: #00AF51;
+          filter: blur(125px);
+          margin-top: 800px;
+          right: -314px;
+      }
+
+      .cost {
+          margin-top: 70px;
+          padding: 0;
+      }
+
+      .cost h1 {
+          font-size: 35px;
+          margin-bottom: 20px;
+      }
+
+      .cost>div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .cost>div>div,
+      .cost>div>div:first-child,
+      .cost>div>div:nth-child(2) {
+          width: 100%;
+          padding: 13px 8px 11px 14px !important;
+      }
+
+      .cost>div>div>div:first-child {
+          margin-bottom: 34px;
+      }
+
+      .cost>div>div:first-child>div:first-child>span,
+      .cost>div>div:nth-child(2)>div:first-child>span,
+      .cost>div>div>div:first-child>span {
+          font-size: 10px !important;
+          margin-bottom: 4px;
+      }
+
+      .cost>div>div:first-child h2,
+      .cost>div>div:nth-child(2) h2,
+      .cost>div>div h2 {
+          font-size: 20px;
+          margin-bottom: 10px;
+      }
+
+      .cost>div>div:first-child p,
+      .cost>div>div:nth-child(2) p,
+      .cost>div>div p {
+          font-size: 10px;
+      }
+
+      .cost>div>div:first-child div:last-child p,
+      .cost>div>div:nth-child(2) div:last-child p,
+      .cost>div>div>div:last-child p {
+          font-size: 15px;
+      }
+
+      .cost>div>div>div:last-child button,
+      .cost>div>div>div:last-child button {
+          font-size: 10px;
+      }
+
+      .cost>div>div:first-child div:last-child button,
+      .cost>div>div:nth-child(2) div:last-child button,
+      .cost>div>div>div:last-child button {
+          padding: 4px 21px;
+      }
+
+      .cost>div>div:first-child div:last-child p span,
+      .cost>div>div:nth-child(2) div:last-child p span,
+      .cost>div>div>div:last-child p span {
+          font-size: 20px;
+      }
+
+      .steps,
+      .contacts,
+      footer {
+          display: none;
+      }
   }
