@@ -37,7 +37,8 @@
   }
 
   body {
-      position: relative;
+      width: 100%;
+      overflow-x: hidden;
       background-color: var(--main-bg-color);
   }
 
@@ -449,6 +450,10 @@
       filter: blur(300px);
       bottom: -364px;
       left: -764px;
+  }
+
+  .back-green-mobile {
+      display: none;
   }
 
   .section-3 {
@@ -1495,12 +1500,20 @@
       }
 
       .back-green {
+          display: none;
+      }
+
+      .back-green-mobile {
+          display: block;
+          position: absolute;
           width: 284px;
           height: 272px;
           border-radius: 284px;
+          background: #00AF51;
           filter: blur(125px);
           left: -300px;
-          bottom: 89px;
+          top: 1300px;
+          z-index: 0;
       }
 
       .section-3 {
