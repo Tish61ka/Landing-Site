@@ -1435,6 +1435,7 @@
   @media screen and (max-width: 431px) {
     *{
         -webkit-appearance: none;
+        appearance: none;
     }
       html{
         -moz-appearance: none;
