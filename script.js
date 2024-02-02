@@ -95,3 +95,4 @@ ctx.strokeStyle = gradient6;
 ctx.lineWidth = 6;
 ctx.stroke();
 
+

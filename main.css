@@ -26,9 +26,22 @@
   }
 
   html {
+    position: relative;
       scroll-behavior: smooth;
       overflow-x: hidden;
+      height: max-content;
   }
+  
+  html::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0.01);
+    width: 3px;
+  }
+  html::-webkit-scrollbar-thumb {
+    width: 3px;
+    background: rgb(157, 157, 157);
+    border-radius: 25px;
+  }
+
 
   :root {
       --main-bg-color: black;
@@ -38,7 +51,9 @@
 
   body {
       width: 100%;
-      overflow-x: hidden;
+      height: max-content;
+      overflow: hidden;
+        overflow-y: auto;
       background-color: var(--main-bg-color);
   }
 
@@ -301,6 +316,10 @@
       margin-right: 40px;
       margin-top: 36px;
   }
+  
+  .section-1>div:nth-child(2) div button:last-child{
+    background: transparent !important;
+  }
 
   .section-1>div:nth-child(2) div button:first-child {
       color: var(--main-bg-color) !important;
@@ -333,8 +352,8 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 135px;
-      height: 135px;
+      width: 145px;
+      height: 145px;
   }
 
   .next-block>div>div {
@@ -346,10 +365,11 @@
       height: 73px;
       border: 1px solid rgba(6, 255, 121, 0.30);
       border-radius: 50%;
+      animation: pulse 1.2s linear infinite;
   }
 
   .next-block>div>div:hover {
-      animation: pulse 1.2s linear infinite;
+      animation: none;
   }
 
   @keyframes pulse {
@@ -362,17 +382,19 @@
       50% {
           width: 100px;
           height: 100px;
-          border: 1px solid rgba(6, 255, 121, 0.12);
+          border: 1.5px solid rgba(6, 255, 121, 0.12);
       }
 
       to {
           width: 135px;
           height: 135px;
-          border: 1px solid rgba(6, 255, 121, 0.02);
+          border: 2px solid rgba(6, 255, 121, 0.02);
       }
   }
 
   .next-block svg {
+    width: 30px;
+    height: 39px;
       cursor: pointer;
   }
 
@@ -448,8 +470,8 @@
       border-radius: 764px;
       background: #00AF51;
       filter: blur(300px);
-      bottom: -364px;
-      left: -764px;
+      top: 2630px;
+      left: -745px;
   }
 
   .back-green-mobile {
@@ -518,7 +540,20 @@
       border-bottom-style: solid;
       border-image: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.20) 19.27%, rgba(217, 217, 217, 0.20) 77.08%, rgba(217, 217, 217, 0.00) 100%) 100;
   }
-
+  @keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.section-3>div:last-child div:last-child details[open] p{
+    animation-name: fadeInDown;
+    animation-duration: 1.5s;
+}
   .section-3>div:last-child div:last-child details summary {
       color: #FFF;
       font-size: 20px;
@@ -535,10 +570,12 @@
   .section-3>div:last-child div:last-child details summary::before {
       content: url("/image/arrow2.png");
       float: right;
+      cursor: pointer;
   }
 
   .section-3>div:last-child div:last-child details[open] summary::before {
       content: url("/image/arrow.png");
+      cursor: pointer;
 
   }
 
@@ -553,10 +590,44 @@
       border-radius: 764px;
       background: #00AF51;
       filter: blur(300px);
-      margin-top: 300px;
-      right: -764px;
+      top: 3867px;
+      right: -747px;
       z-index: 0;
   }
+  
+  .back-green-3 {
+    position: absolute;
+    width: 764px;
+    height: 730px;
+    border-radius: 764px;
+    background: #00AF51;
+    filter: blur(300px);
+    top: 4730px;
+    left: -745px;
+    z-index: 0;
+}
+.back-green-4 {
+    position: absolute;
+    width: 764px;
+    height: 730px;
+    border-radius: 764px;
+    background: #00AF51;
+    filter: blur(300px);
+    top: 1880px;
+    right: -747px;
+    z-index: 0;
+}
+.back-green-5 {
+    position: absolute;
+    width: 764px;
+    height: 730px;
+    border-radius: 764px;
+    background: #00AF51;
+    filter: blur(300px);
+    top: 5737px;
+    right: -747px;
+    z-index: 0;
+}
 
   .cost {
       margin-top: 200px;
@@ -1230,7 +1301,12 @@
       border: none;
       background: transparent;
   }
-
+  .contacts>div:last-child form input[type=file]{
+    height: 39px;
+  }
+  .contacts>div:last-child form input[type=file]::-webkit-file-upload-button{
+    color: transparent;
+  }
   .onfile {
       position: relative;
   }
@@ -1274,6 +1350,7 @@
   }
 
   footer {
+    position: relative;
       display: flex;
       flex-direction: column;
       padding-right: 255px;
@@ -1356,12 +1433,16 @@
   }
 
   @media screen and (max-width: 431px) {
-      html {
-          overflow-x: hidden;
+      html{
+          overflow-x: hidden !important;
+      }
+      html::-webkit-scrollbar{
+        display: none;
       }
 
       .container {
           width: 280px;
+          min-width: 270px;
           margin: 0 auto;
       }
 
@@ -1557,15 +1638,6 @@
           font-size: 13px;
       }
 
-      .back-green-2 {
-          width: 284px;
-          height: 272px;
-          border-radius: 284px;
-          filter: blur(125px);
-          margin-top: 800px;
-          right: -314px;
-          overflow: hidden;
-      }
 
       .cost {
           margin-top: 70px;
