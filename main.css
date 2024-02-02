@@ -1439,6 +1439,7 @@
       html{
         -moz-appearance: none;
         -webkit-appearance: none;
+        appearance: none;
           overflow-x: hidden !important;
           -webkit-overflow-scrolling: touch;
       }
