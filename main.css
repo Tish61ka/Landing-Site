@@ -596,7 +596,7 @@
       line-height: normal;
   }
 
-  .section-3>div:last-child div:last-child {
+  .section-3>div:last-child>div:last-child {
       width: 468px;
   }
 
@@ -618,10 +618,10 @@
       border-image: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.20) 19.27%, rgba(217, 217, 217, 0.20) 77.08%, rgba(217, 217, 217, 0.00) 100%) 100;
   }
 
-  .section-3>div:last-child>div:last-child>div span {
+  .section-3>div:last-child>div:last-child>div>span {
       display: flex;
       align-items: start;
-      flex-direction: row-reverse;
+      flex-direction: row;
       justify-content: space-between;
       color: #FFF;
       font-size: 20px;
@@ -641,24 +641,34 @@
       }
   }
 
-  .section-3>div:last-child>div:last-child>div span::before {
-      content: '+';
+  .vertical {
+      position: absolute;
+      display: block;
+      border-right: 2px solid white;
+      height: 18px;
+      transition: 400ms;
+  }
+
+  .section-3>div:last-child>div:last-child>div span.closed .vertical {
+      transform: rotate(90deg);
+  }
+
+  .horizontal {
+      position: absolute;
+      display: block;
+      border-top: 2px solid white;
+      width: 18px;
+  }
+
+  .section-3>div:last-child>div:last-child>div span>div {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 40px;
+      width: 20px;
       height: 20px;
-      cursor: pointer;
-      font-weight: 400;
       margin-top: 2px;
-  }
-
-  .section-3>div:last-child>div:last-child>div span.closed::before {
-      animation: animationPlus 500ms linear;
-  }
-
-  .section-3>div:last-child>div:last-child>div span.active::before {
-      content: '−';
+      cursor: pointer;
   }
 
   .control {
@@ -1765,6 +1775,10 @@
 
       .section-3>div:last-child div:last-child details summary {
           font-size: 13px;
+      }
+
+      .section-3>div:last-child>div:last-child>div span>div {
+          margin-right: 5px;
       }
 
 
