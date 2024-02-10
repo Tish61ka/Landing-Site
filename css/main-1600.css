@@ -1,0 +1,21 @@
+@media (max-width: 1600px) {
+
+    .container {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*------------------------ Modal -----------------------*/
+
+    .modal__example-content {
+        width: min(1000px, 100%);
+    }
+
+    .modal_example-img {
+        height: 421px;
+    }
+
+    /*------------------------ Modal -----------------------*/
+
+}

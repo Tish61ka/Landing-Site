@@ -21,13 +21,22 @@ $(document).ready(function () {
         $(this).next().children().slideToggle(400);
 
     });
+    function closeModal() {
+        $('.modal__example-container').removeClass('open');
+        $('html').css('overflow-y', 'scroll');
+    }
 
     $('.modal_example-header button').click(function (e) {
-        $('.modal__example-container').slideToggle(400);
+        closeModal()
         e.preventDefault();
+    });
+    $('.modal_example-main button').click(function () {
+        closeModal()
     });
     $('.flex-net>div').click(function (e) {
-        $('.modal__example-container').slideToggle(400);
+        $('.modal__example-container').addClass('open');
+        $('html').css('overflow-y', 'hidden');
         e.preventDefault();
     });
+
 });
