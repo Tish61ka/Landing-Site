@@ -85,6 +85,154 @@
   } */
 
 
+  /*------------------------ Modal -----------------------*/
+
+  .modal__example-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+
+      display: flex;
+      justify-content: center;
+      align-items: start;
+
+      width: 100vw;
+      height: 100vh;
+
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal__example-container.open {
+      display: flex;
+  }
+
+  .modal__example-content::-webkit-scrollbar {
+      width: 3px;
+
+      background: rgba(0, 0, 0, 0.01);
+  }
+
+  .modal__example-content::-webkit-scrollbar-thumb {
+      width: 3px;
+
+      background: rgb(157, 157, 157);
+
+      border-radius: 25px;
+  }
+
+  .modal__example-content {
+      position: relative;
+
+      width: min(1208px, 100%);
+      height: 100%;
+
+      background-color: #121212;
+
+      overflow-y: scroll;
+  }
+
+  .modal__example-content * {
+      color: white;
+  }
+
+  .modal_example-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #FC3F1D;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+      padding: 20px 0;
+  }
+
+  .modal_example-header button {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      transform: rotate(45deg);
+
+      height: 35px;
+
+      background: none;
+      border: none;
+      outline: none;
+
+      font-family: "Montserrat", sans-serif;
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+
+      cursor: pointer;
+  }
+
+  .modal_example-main {
+      padding-left: 70px;
+      padding-right: 107px;
+      padding-top: 29px;
+  }
+
+  .modal_example-main>h1 {
+      font-size: 24px;
+      font-weight: 800;
+
+      margin-bottom: 20px;
+  }
+
+  .modal_example-main>p {
+      width: min(495px, 100%);
+
+      font-size: 20px;
+      font-weight: 500;
+
+      margin-bottom: 60px;
+  }
+
+  .modal_example-img {
+      width: 100%;
+      height: 571px;
+
+      border-radius: 15px;
+
+      margin-bottom: 30px;
+  }
+
+  .modal_example-main h2 {
+      width: min(590px, 100%);
+
+      font-size: 64px;
+      font-weight: 700;
+
+      margin-bottom: 35px;
+  }
+
+  .modal_example-main h2 span {
+      height: 55px;
+
+      vertical-align: middle;
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+  .modal_example-main button {
+      background-color: var(--second-color);
+      border-radius: 15px;
+
+      color: black;
+      font-size: 16px;
+      font-weight: 600;
+
+      padding: 10px 20px;
+      margin-bottom: 100px;
+
+      cursor: pointer;
+  }
+
+  /*------------------------ Modal -----------------------*/
+
+
 
   .backgtound-main {
       position: absolute;

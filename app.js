@@ -21,4 +21,13 @@ $(document).ready(function () {
         $(this).next().children().slideToggle(400);
 
     });
+
+    $('.modal_example-header button').click(function (e) {
+        $('.modal__example-container').slideToggle(400);
+        e.preventDefault();
+    });
+    $('.flex-net>div').click(function (e) {
+        $('.modal__example-container').slideToggle(400);
+        e.preventDefault();
+    });
 });
