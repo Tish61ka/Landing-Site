@@ -1,7 +1,7 @@
 @media (max-width: 1600px) {
 
     .container {
-        max-width: 1300px;
+        max-width: 1250px;
         width: 100%;
         margin: 0 auto;
     }
@@ -16,6 +16,329 @@
         height: 421px;
     }
 
-    /*------------------------ Modal -----------------------*/
+    /*------------------------ Header -----------------------*/
+
+    .computer-header {
+        padding-left: 90px;
+        padding-top: 5px;
+    }
+
+    .computer-header a svg {
+        width: 128px;
+        height: 48px;
+    }
+
+    .computer-header nav {
+        width: 40%;
+    }
+
+    .computer-header nav ul li {
+        font-size: 15px;
+        margin-right: 70px;
+    }
+
+    .computer-header div a:first-child button {
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+
+    .computer-header div button:last-child {
+        padding: 8px 14px;
+        font-size: 15px;
+    }
+
+    /*------------------------ Background-main -----------------------*/
+
+    .flex svg:first-child {
+        margin-top: 63px;
+    }
+
+    .flex svg:not(:first-child) {
+        width: 690px;
+        margin-top: 136px;
+    }
+
+    .flex svg:last-child {
+        margin-top: 157px !important;
+    }
+
+    .flex-v svg:first-child {
+        height: 739px;
+        margin-right: 140px;
+    }
+
+    .flex-v svg:nth-child(2) {
+        height: 650px;
+        margin-right: 90px;
+    }
+
+    .flex-v svg:nth-child(3) {
+        height: 615px;
+        margin-right: 345px;
+        margin-left: 0;
+    }
+
+    .flex-v svg:last-child {
+        height: 220px;
+        margin-left: 0;
+        margin-top: 175px;
+    }
+
+    .flex-v-l {
+        display: none;
+    }
+
+    .backgtound-main img {
+        width: 750px;
+        height: 801px;
+        top: -115px;
+        margin-left: 48%;
+    }
+
+    /*------------------------ Section - 1 -----------------------*/
+
+    .section-1 {
+        grid-template-rows: 137px 170px 191px;
+        margin-top: 0;
+
+    }
+
+    .section-1>div:first-child {
+        padding-left: 10px;
+    }
+
+    .section-1 h1 {
+        font-size: 110px;
+    }
+
+    .section-1 h1 svg {
+        width: 150px;
+        left: 432px;
+    }
+
+    .section-1>div>div h2 {
+        font-size: 40px;
+    }
+
+    .section-1>div:nth-child(2) {
+        padding-left: 10px;
+    }
+
+    .section-1>div:nth-child(2) p {
+        width: 65%;
+        font-size: 15px;
+    }
+
+    .section-1>div:nth-child(2) div button {
+        width: 215px;
+        height: 45px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .next-block {
+        margin-top: 50px;
+    }
+
+    .next-block svg {
+        height: 37px;
+    }
+
+    /*------------------------ Section - 2 -----------------------*/
+
+    .section-2 {
+        padding: 0 130px;
+    }
+
+    .section-2>div:first-child {
+        height: 70px;
+    }
+
+    .section-2>div>span,
+    .section-2 div h1 {
+        font-size: 60px;
+    }
+
+    .section-2 div svg {
+        width: 70px;
+    }
+
+    .flex-net>div {
+        max-width: 450px;
+    }
+
+    .flex-net h2 {
+        font-size: 17px;
+    }
+
+    .flex-net p {
+        font-size: 14px;
+    }
+
+    .flex-net>div img {
+        width: 100%;
+    }
+
+    /*------------------------ Section - 3-----------------------*/
+
+    .section-3>div:last-child div:first-child h1 {
+        width: 420px;
+        font-size: 30px;
+    }
+
+    .section-3>div:last-child div:first-child p {
+        width: 440px;
+        font-size: 16px;
+    }
+
+    .section-3>div:last-child>div:last-child {
+        width: 400px;
+    }
+
+    .section-3>div:last-child>div:last-child>div>span {
+        padding-bottom: 0;
+        font-size: 17px;
+    }
+
+    .section-3>div:last-child>div:last-child>div>div p {
+        width: 390px;
+        font-size: 14px;
+    }
+
+    /*------------------------ Cost -----------------------*/
+
+    .cost {
+        padding: 0 40px;
+    }
+
+    .cost h1 {
+        font-size: 50px;
+        margin-bottom: 35px;
+    }
+
+    .cost__card:first-child>div:first-child>span,
+    .cost__card:nth-child(2)>div:first-child>span {
+        font-size: 20px;
+    }
+
+    .cost__card-top>span {
+        font-size: 15px;
+    }
+
+    .cost__card:first-child h2,
+    .cost__card:nth-child(2) h2 {
+        font-size: 50px;
+    }
+
+    .cost__card h2 {
+        font-size: 30px;
+    }
+
+    .cost__card:first-child .cost__card-bot p,
+    .cost__card:nth-child(2) .cost__card-bot p {
+        font-size: 25px;
+    }
+
+    .cost__card p,
+    .cost__card:last-child p {
+        font-size: 15px;
+    }
+
+    .cost__card:first-child .cost__card-bot p span,
+    .cost__card:nth-child(2) .cost__card-bot p span {
+        font-size: 50px;
+    }
+
+    .cost__card-bot p span {
+        font-size: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .cost__content {
+        display: grid;
+        grid-template-rows: 275px 205px;
+        grid-template-columns: 338px 220px 123px 428px;
+        grid-gap: 20px;
+    }
+
+    .cost__card-bot button {
+        padding: 8px 19px;
+        font-size: 15px;
+    }
+
+    .cost__card:first-child .cost__card-bot button,
+    .cost__card:nth-child(2) .cost__card-bot button {
+        padding: 8px 46px;
+    }
+
+    /*------------------------ Step -----------------------*/
+
+    /*------------------------ Contacts -----------------------*/
+
+    .contacts div h1,
+    .contacts div h1 span {
+        font-size: 100px;
+        text-transform: uppercase;
+    }
+
+    .contacts div h1 {
+        margin-left: 85px;
+    }
+
+    .contacts div h1 svg {
+        width: 120px;
+        top: -17px;
+    }
+
+    .contacts div>svg {
+        width: 457px;
+        top: -136px;
+        left: 10px;
+    }
+
+    .contacts>div:last-child {
+        padding-left: 95px;
+        padding-right: 183px;
+        margin-top: 5px;
+    }
+
+    .contacts>div:last-child div p:first-child {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .contacts>div:last-child div p:last-child {
+        font-size: 35px;
+    }
+
+
+    /*------------------------ Footer -----------------------*/
+
+    footer a svg {
+        width: 128px;
+        height: 48px;
+    }
+
+    footer div:first-child nav ul li {
+        font-size: 15px;
+        margin-right: 55px;
+    }
+
+    footer div:first-child>div a:first-child button {
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+
+    footer div:first-child>div button:last-child {
+        padding: 8px 14px;
+        font-size: 15px;
+    }
+
+    footer div:last-child a,
+    footer div:last-child span,
+    footer div:last-child p {
+        font-size: 16px;
+    }
 
 }

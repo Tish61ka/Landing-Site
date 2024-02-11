@@ -991,7 +991,8 @@
       padding: 11px 60px;
   }
 
-  .cost__card:last-child p {
+  .cost__card:last-child p,
+  .cost__card p {
       display: flex;
       flex-direction: row;
       align-items: center;
