@@ -52,6 +52,8 @@
       width: 3px;
       background: rgb(157, 157, 157);
       border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px
   }
 
 
@@ -114,7 +116,7 @@
   }
 
   .modal__example-content::-webkit-scrollbar-thumb {
-      width: 3px;
+      width: 5px;
 
       background: rgb(157, 157, 157);
 
@@ -226,6 +228,7 @@
   .modal_example-main button {
       background-color: var(--second-color);
       border-radius: 15px;
+      border: none;
 
       color: black;
       font-size: 16px;
@@ -238,8 +241,6 @@
   }
 
   /*------------------------ Modal -----------------------*/
-
-
 
   .backgtound-main {
       position: absolute;
@@ -296,8 +297,10 @@
       height: 730px;
       flex-shrink: 0;
       border-radius: 764px;
-      background: #00AF51;
+      background-color: #00AF51;
       filter: blur(300px);
+      -webkit-filter: blur(300px);
+      transform: translate3d(0, 0, 0);
   }
 
   .flex-v-l {
@@ -375,7 +378,7 @@
       align-items: center;
   }
 
-  .computer-header div button:first-child {
+  .computer-header div a:first-child button {
       margin-right: 35px;
       color: #000;
       border-radius: 15px;
@@ -497,13 +500,14 @@
       border: 1px solid #06FF79;
       margin-right: 40px;
       margin-top: 36px;
+      cursor: pointer;
   }
 
-  .section-1>div:nth-child(2) div button:last-child {
+  .section-1>div:nth-child(2) div a:last-child button {
       background: transparent !important;
   }
 
-  .section-1>div:nth-child(2) div button:first-child {
+  .section-1>div:nth-child(2) div a:first-child button {
       color: var(--main-bg-color) !important;
       background-color: var(--second-color) !important;
   }
@@ -697,6 +701,7 @@
       border-radius: 764px;
       background: #00AF51;
       filter: blur(300px);
+      transform: translate3d(0, 0, 0);
       top: 2630px;
       left: -745px;
   }
@@ -837,6 +842,7 @@
       border-radius: 764px;
       background: #00AF51;
       filter: blur(300px);
+      transform: translate3d(0, 0, 0);
       top: 3867px;
       right: -747px;
       z-index: 0;
@@ -849,6 +855,7 @@
       border-radius: 764px;
       background: #00AF51;
       filter: blur(300px);
+      transform: translate3d(0, 0, 0);
       top: 4730px;
       left: -745px;
       z-index: 0;
@@ -861,6 +868,7 @@
       border-radius: 764px;
       background: #00AF51;
       filter: blur(300px);
+      transform: translate3d(0, 0, 0);
       top: 1880px;
       right: -747px;
       z-index: 0;
@@ -873,6 +881,7 @@
       border-radius: 764px;
       background: #00AF51;
       filter: blur(300px);
+      transform: translate3d(0, 0, 0);
       top: 5737px;
       right: -747px;
       z-index: 0;
@@ -896,7 +905,7 @@
       color: var(--second-color) !important;
   }
 
-  .cost>div {
+  .cost__content {
       display: grid;
       grid-template-rows: 333px 229px;
       grid-template-columns: 341px 341px 87px 553px;
@@ -904,7 +913,7 @@
       margin-bottom: 50px;
   }
 
-  .cost>div>div {
+  .cost__card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -915,7 +924,7 @@
       padding-bottom: 20px;
   }
 
-  .cost>div>div>div:first-child>span {
+  .cost__card-top>span {
       color: var(--main-txt-color);
       font-size: 20px;
       font-style: normal;
@@ -924,12 +933,12 @@
       margin-bottom: 10px;
   }
 
-  .cost>div>div:first-child>div:first-child>span,
-  .cost>div>div:nth-child(2)>div:first-child>span {
+  .cost__card:first-child>div:first-child>span,
+  .cost__card:nth-child(2)>div:first-child>span {
       font-size: 25px !important;
   }
 
-  .cost>div>div h2 {
+  .cost__card h2 {
       color: var(--main-txt-color);
       font-size: 45px;
       font-style: normal;
@@ -937,13 +946,13 @@
       line-height: normal;
   }
 
-  .cost>div>div:first-child h2,
-  .cost>div>div:nth-child(2) h2 {
+  .cost__card:first-child h2,
+  .cost__card:nth-child(2) h2 {
       font-size: 65px;
       font-weight: 700;
   }
 
-  .cost>div>div p {
+  .cost__card p {
       color: var(--main-txt-color);
       font-size: 20px;
       font-style: normal;
@@ -951,19 +960,19 @@
       line-height: normal;
   }
 
-  .cost>div>div:first-child p,
-  .cost>div>div:nth-child(2) p {
+  .cost__card:first-child p,
+  .cost__card:nth-child(2) p {
       font-size: 24px;
   }
 
-  .cost>div>div>div:last-child {
+  .cost__card-bot {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
   }
 
-  .cost>div>div>div:last-child button {
+  .cost__card-bot button {
       border-radius: 5px;
       background: var(--second-color);
       padding: 11px 32px;
@@ -977,12 +986,12 @@
       border: none;
   }
 
-  .cost>div>div:first-child div:last-child button,
-  .cost>div>div:nth-child(2) div:last-child button {
+  .cost__card:first-child .cost__card-bot button,
+  .cost__card:nth-child(2) .cost__card-bot button {
       padding: 11px 60px;
   }
 
-  .cost>div>div>div:last-child p {
+  .cost__card:last-child p {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -993,17 +1002,17 @@
       line-height: normal;
   }
 
-  .cost>div>div:first-child div:last-child p,
-  .cost>div>div:nth-child(2) div:last-child p {
+  .cost__card:first-child .cost__card-bot p,
+  .cost__card:nth-child(2) .cost__card-bot p {
       font-size: 30px;
   }
 
-  .cost>div>div:nth-child(2) div:last-child,
-  .cost>div>div:last-child div:last-child {
+  .cost__card:nth-child(2) .cost__card-bot,
+  .cost__card:last-child .cost__card-bot {
       justify-content: end;
   }
 
-  .cost>div>div>div:last-child p span {
+  .cost__card-bot p span {
       color: var(--second-color);
       font-size: 35px;
       font-weight: 700;
@@ -1011,19 +1020,19 @@
       margin-right: 11px;
   }
 
-  .cost>div>div:first-child div:last-child p span,
-  .cost>div>div:nth-child(2) div:last-child p span {
+  .cost__card:first-child .cost__card-bot p span,
+  .cost__card:nth-child(2) .cost__card-bot p span {
       font-size: 75px;
   }
 
-  .cost>div>div:first-child {
+  .cost__card:first-child {
       grid-row: 1/2;
       grid-column: 1/3;
       background: #1B1B1B;
       padding: 34px 20px 15px 34px !important;
   }
 
-  .cost>div>div:nth-child(2) {
+  .cost__card:nth-child(2) {
       grid-row: 1/2;
       grid-column: 3/5;
       border: 1px solid #06FF79;
@@ -1031,19 +1040,19 @@
       padding: 34px 20px 15px 34px !important;
   }
 
-  .cost>div>div:nth-child(3) {
+  .cost__card:nth-child(3) {
       grid-row: 2/3;
       grid-column: 1/2;
       background: #1B1B1B;
   }
 
-  .cost>div>div:nth-child(4) {
+  .cost__card:nth-child(4) {
       grid-row: 2/3;
       grid-column: 2/4;
       background: #1B1B1B;
   }
 
-  .cost>div>div:last-child {
+  .cost__card:last-child {
       grid-row: 2/2;
       grid-column: 4/5;
       border: 1px solid #06FF79;
@@ -1552,6 +1561,7 @@
   }
 
   .contacts>div:last-child form input[type=file] {
+      width: 200px;
       height: 39px;
   }
 
@@ -1559,8 +1569,24 @@
       color: transparent;
   }
 
+  .contacts>div:last-child form input[type=file]+div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: fit-content;
+      max-width: 500px;
+      margin: 20px 0;
+  }
+
+  .selected-files {
+      color: var(--second-color);
+      font-size: 16px;
+      font-family: 'Montserrat';
+  }
+
   .onfile {
       position: relative;
+      height: fit-content;
   }
 
   .contacts>div:last-child form input[type=file]::before {
@@ -1645,6 +1671,11 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      transition: 400ms;
+  }
+
+  footer div nav ul li:hover {
+      color: var(--second-color);
   }
 
   footer div:first-child>div {
@@ -1652,7 +1683,7 @@
       align-items: center;
   }
 
-  footer div:first-child>div button:first-child {
+  footer div:first-child>div a:first-child button {
       margin-right: 35px;
       color: #000;
       border-radius: 15px;
@@ -1680,6 +1711,8 @@
       line-height: normal;
       cursor: pointer;
   }
+
+
 
   footer>div:last-child {
       display: flex;
@@ -1714,391 +1747,4 @@
 
   .mobile-header {
       display: none;
-  }
-
-  @media screen and (max-width: 431px) {
-      * {
-          -webkit-appearance: none;
-          appearance: none;
-      }
-
-      html {
-          -moz-appearance: none;
-          -webkit-appearance: none;
-          appearance: none;
-          overflow-x: hidden !important;
-          -webkit-overflow-scrolling: touch;
-      }
-
-      html::-webkit-scrollbar {
-          display: none;
-      }
-
-      .container {
-          width: 280px;
-          min-width: 270px;
-          margin: 0 auto;
-      }
-
-      .computer-header {
-          display: none;
-      }
-
-      .mobile-header {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-          padding: 10px 0;
-      }
-
-      .mobile-header svg {
-          width: 97px;
-          height: 35px;
-      }
-
-      .mobile-header div {
-          width: 30px;
-          height: 22px;
-          background-color: white;
-      }
-
-      .flex,
-      .flex-v,
-      .flex-v-l {
-          display: none;
-      }
-
-      /*????????????????*/
-      .circle-sec-1 {
-          left: -250px;
-          top: 227px;
-          z-index: 0;
-          width: 284px;
-          height: 272px;
-          border-radius: 284px;
-          filter: blur(125px);
-      }
-
-      .backgtound-main img {
-          overflow: hidden;
-          width: 390px;
-          height: 390px;
-          right: -153px;
-          top: -114px;
-      }
-
-      .section-1 {
-          display: block;
-          margin-top: 120px;
-      }
-
-      .section-1 h1 {
-          font-size: 50px;
-      }
-
-      .section-1 h1 svg {
-          width: 67px;
-          height: 51.861px;
-          margin-top: 2px;
-          left: 200px;
-      }
-
-      .section-1>div>div h2 {
-          font-size: 18px;
-          line-height: 117.4%;
-      }
-
-      .section-1>div:nth-child(2) p {
-          width: 100%;
-          font-size: 12px;
-      }
-
-      .section-1>div:nth-child(2) div button {
-          width: 116px;
-          height: 25.565px;
-          font-size: 9px;
-          margin-top: 22px;
-          margin-top: 30px;
-      }
-
-      .next-block {
-          margin-top: 65px;
-      }
-
-
-      .section-2 {
-          width: 100%;
-          padding: 0;
-          margin-top: 4px;
-          margin-bottom: 40px;
-      }
-
-      .section-2>div:first-child {
-          height: 119px;
-          padding-right: 0px;
-          margin-bottom: 0px;
-      }
-
-      .section-2 div h1 {
-          font-size: 35px;
-      }
-
-      .section-2 div span {
-          font-size: 35px;
-      }
-
-      .section-2>div:first-child svg {
-          width: 45px;
-          height: 38.333px;
-      }
-
-      .flex-net {
-          flex-direction: column;
-      }
-
-      .flex-net div,
-      .flex-net div img {
-          width: 100%;
-      }
-
-      .flex-net div h2 {
-          font-size: 15px;
-          margin-top: 10px;
-          margin-bottom: 5px;
-      }
-
-      .flex-net div p {
-          font-size: 12px;
-          margin-bottom: 22px;
-      }
-
-      .back-green {
-          display: none;
-      }
-
-      .back-green-mobile {
-          display: block;
-          position: absolute;
-          width: 284px;
-          height: 272px;
-          border-radius: 284px;
-          background: #00AF51;
-          filter: blur(125px);
-          left: -300px;
-          top: 1300px;
-          z-index: 0;
-      }
-
-      .section-3 {
-          padding: 0;
-      }
-
-      .faq {
-          width: 51px;
-          color: rgba(6, 255, 121, 0.60);
-          font-size: 10px;
-      }
-
-      .section-3>div:last-child {
-          flex-direction: column;
-      }
-
-      .section-3>div:last-child div:first-child {
-          margin-bottom: 40px;
-      }
-
-      .section-3>div:last-child div:first-child h1 {
-          width: 100%;
-          font-size: 25px;
-          margin-bottom: 13px;
-      }
-
-      .section-3>div:last-child div:first-child p {
-          width: 100%;
-          font-size: 15px;
-      }
-
-      .section-3>div:last-child div:last-child {
-          width: 100%;
-      }
-
-      .section-3>div:last-child div:last-child details {
-          font-size: 12px;
-      }
-
-      .section-3>div:last-child div:last-child details summary {
-          font-size: 13px;
-      }
-
-      .section-3>div:last-child>div:last-child>div span>div {
-          margin-right: 5px;
-      }
-
-
-      .cost {
-          margin-top: 70px;
-          padding: 0;
-      }
-
-      .cost h1 {
-          font-size: 35px;
-          margin-bottom: 20px;
-      }
-
-      .cost>div {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-      }
-
-      .cost>div>div,
-      .cost>div>div:first-child,
-      .cost>div>div:nth-child(2) {
-          width: 100%;
-          padding: 13px 8px 11px 14px !important;
-      }
-
-      .cost>div>div>div:first-child {
-          margin-bottom: 34px;
-      }
-
-      .cost>div>div:first-child>div:first-child>span,
-      .cost>div>div:nth-child(2)>div:first-child>span,
-      .cost>div>div>div:first-child>span {
-          font-size: 10px !important;
-          margin-bottom: 4px;
-      }
-
-      .cost>div>div:first-child h2,
-      .cost>div>div:nth-child(2) h2,
-      .cost>div>div h2 {
-          font-size: 20px;
-          margin-bottom: 10px;
-      }
-
-      .cost>div>div:first-child p,
-      .cost>div>div:nth-child(2) p,
-      .cost>div>div p {
-          font-size: 10px;
-      }
-
-      .cost>div>div:first-child div:last-child p,
-      .cost>div>div:nth-child(2) div:last-child p,
-      .cost>div>div>div:last-child p {
-          font-size: 15px;
-      }
-
-      .cost>div>div>div:last-child button,
-      .cost>div>div>div:last-child button {
-          font-size: 10px;
-      }
-
-      .cost>div>div:first-child div:last-child button,
-      .cost>div>div:nth-child(2) div:last-child button,
-      .cost>div>div>div:last-child button {
-          padding: 4px 21px;
-      }
-
-      .cost>div>div:first-child div:last-child p span,
-      .cost>div>div:nth-child(2) div:last-child p span,
-      .cost>div>div>div:last-child p span {
-          font-size: 20px;
-      }
-
-
-
-      .steps {
-          display: none;
-      }
-
-
-
-      .contacts {
-          margin-top: 80px;
-          margin-bottom: 60px;
-      }
-
-      .contacts div>svg {
-          display: none;
-      }
-
-      .contacts div h1,
-      .contacts div h1 span {
-          font-size: 35px;
-          margin: 0;
-      }
-
-      .contacts div h1 svg {
-          width: 45px;
-          height: 38.333px;
-          top: 3px;
-      }
-
-      .contacts>div:last-child {
-          padding: 0;
-          margin-top: 30px;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 0;
-      }
-
-      .contacts>div:last-child form {
-          width: 100%;
-          gap: 14px;
-          margin-top: 30px;
-      }
-
-      .contacts>div:last-child form input[type=email],
-      .contacts>div:last-child form input[type=text] {
-          height: 50px;
-      }
-
-      .contacts>div:last-child form textarea {
-          height: 140px;
-      }
-
-      .contacts>div:last-child div p:first-child {
-          font-size: 33px;
-          margin-bottom: 10px;
-      }
-
-      .contacts>div:last-child div p:last-child {
-          font-size: 21px;
-      }
-
-
-
-      footer {
-          padding: 0;
-      }
-
-      footer div:first-child {
-          justify-content: center;
-          margin-bottom: 16px;
-      }
-
-      footer div:first-child nav {
-          display: none;
-      }
-
-      footer div:first-child button {
-          display: none;
-      }
-
-      footer div:last-child {
-          margin-bottom: 20px;
-      }
-
-      footer div:last-child a,
-      footer div:last-child span,
-      footer div:last-child p {
-
-          font-size: 8px;
-      }
-
-      footer div:last-child span {
-          margin: 0 8px;
-      }
   }

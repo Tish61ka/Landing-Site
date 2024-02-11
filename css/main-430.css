@@ -5,11 +5,13 @@
     }
 
     html {
-        -moz-appearance: none;
+        /* -moz-appearance: none;
         -webkit-appearance: none;
-        appearance: none;
+        appearance: none; */
         overflow-x: hidden !important;
+        -webkit-text-size-adjust: none;
         -webkit-overflow-scrolling: touch;
+
     }
 
     html::-webkit-scrollbar {
@@ -61,6 +63,8 @@
         height: 272px;
         border-radius: 284px;
         filter: blur(125px);
+        -webkit-filter: blur(125px);
+        transform: translate3d(0, 0, 0);
     }
 
     .backgtound-main img {
@@ -168,6 +172,7 @@
         border-radius: 284px;
         background: #00AF51;
         filter: blur(125px);
+        transform: translate3d(0, 0, 0);
         left: -300px;
         top: 1300px;
         z-index: 0;
@@ -229,63 +234,63 @@
         margin-bottom: 20px;
     }
 
-    .cost>div {
+    .cost__content {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .cost>div>div,
-    .cost>div>div:first-child,
-    .cost>div>div:nth-child(2) {
+    .cost__card,
+    .cost__card:first-child,
+    .cost__card:nth-child(2) {
         width: 100%;
         padding: 13px 8px 11px 14px !important;
     }
 
-    .cost>div>div>div:first-child {
+    .cost__card-top {
         margin-bottom: 34px;
     }
 
-    .cost>div>div:first-child>div:first-child>span,
-    .cost>div>div:nth-child(2)>div:first-child>span,
-    .cost>div>div>div:first-child>span {
+    .cost__card:first-child>.cost__card-top>span,
+    .cost__card:nth-child(2)>.cost__card-top>span,
+    .cost__card-top>span {
         font-size: 10px !important;
         margin-bottom: 4px;
     }
 
-    .cost>div>div:first-child h2,
-    .cost>div>div:nth-child(2) h2,
-    .cost>div>div h2 {
+    .cost__card:first-child h2,
+    .cost__card:nth-child(2) h2,
+    .cost__card h2 {
         font-size: 20px;
         margin-bottom: 10px;
     }
 
-    .cost>div>div:first-child p,
-    .cost>div>div:nth-child(2) p,
-    .cost>div>div p {
+    .cost__card:first-child p,
+    .cost__card:nth-child(2) p,
+    .cost__card p {
         font-size: 10px;
     }
 
-    .cost>div>div:first-child div:last-child p,
-    .cost>div>div:nth-child(2) div:last-child p,
-    .cost>div>div>div:last-child p {
+    .cost__card:first-child .cost__card-bot p,
+    .cost__card:nth-child(2) .cost__card-bot p,
+    .cost__card-bot p {
         font-size: 15px;
     }
 
-    .cost>div>div>div:last-child button,
-    .cost>div>div>div:last-child button {
+    .cost__card-bot button,
+    .cost__card-bot button {
         font-size: 10px;
     }
 
-    .cost>div>div:first-child div:last-child button,
-    .cost>div>div:nth-child(2) div:last-child button,
-    .cost>div>div>div:last-child button {
+    .cost__card:first-child .cost__card-bot button,
+    .cost__card:nth-child(2) .cost__card-bot button,
+    .cost__card-bot button {
         padding: 4px 21px;
     }
 
-    .cost>div>div:first-child div:last-child p span,
-    .cost>div>div:nth-child(2) div:last-child p span,
-    .cost>div>div>div:last-child p span {
+    .cost__card:first-child .cost__card-bot p span,
+    .cost__card:nth-child(2) .cost__card-bot p span,
+    .cost__card-bot p span {
         font-size: 20px;
     }
 
@@ -383,4 +388,56 @@
     footer div:last-child span {
         margin: 0 8px;
     }
+
+    /*------------------------ Modal -----------------------*/
+
+    .modal_example-header {
+        padding: 10px 0;
+    }
+
+    .modal_example-header button {
+        top: 15px;
+        right: 15px;
+    }
+
+    .modal_example-main {
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    .modal_example-main>h1 {
+        font-size: 22px;
+    }
+
+    .modal_example-main>p {
+        font-size: 18px;
+
+        margin-bottom: 35px;
+    }
+
+    .modal_example-img {
+        height: 175px;
+
+        margin-bottom: 20px;
+    }
+
+    .modal_example-main h2 {
+        font-size: 54px;
+        line-height: 1;
+
+        margin-bottom: 25px;
+        margin-top: 60px;
+    }
+
+    .modal_example-main h2 span {
+        height: 45px;
+
+        font-size: 18px;
+    }
+
+    .modal_example-main button {
+        margin-bottom: 50px;
+    }
+
+    /*------------------------ Modal -----------------------*/
 }
