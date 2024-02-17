@@ -922,7 +922,10 @@
       padding-top: 24px;
       padding-left: 30px;
       padding-bottom: 20px;
+      transform-style: preserve-3d;
   }
+
+  .cost__card-top {}
 
   .cost__card-top>span {
       color: var(--main-txt-color);
@@ -970,6 +973,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      transform: translateZ(50px);
   }
 
   .cost__card-bot button {
@@ -1006,6 +1010,7 @@
   .cost__card:first-child .cost__card-bot p,
   .cost__card:nth-child(2) .cost__card-bot p {
       font-size: 30px;
+      transform: translateZ(20px);
   }
 
   .cost__card:nth-child(2) .cost__card-bot,

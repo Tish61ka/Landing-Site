@@ -12,8 +12,26 @@
         width: min(1000px, 100%);
     }
 
+    .modal_example-main>h1 {
+        font-size: 20px;
+    }
+
+    .modal_example-main>p {
+        font-size: 15px;
+
+        margin-bottom: 40px;
+    }
+
     .modal_example-img {
         height: 421px;
+    }
+
+    .modal_example-main h2 {
+        font-size: 54px;
+    }
+
+    .modal_example-main h2 span {
+        font-size: 18px;
     }
 
     /*------------------------ Header -----------------------*/
