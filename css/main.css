@@ -1065,16 +1065,20 @@
       background: linear-gradient(107deg, #06FF79 0%, rgba(0, 0, 0, 0.02) 31.77%, rgba(255, 255, 255, 0.00) 100%);
   }
 
+  /*-------------------- Step ------------------------*/
   .steps {
       position: relative;
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-top: 300px;
+      margin-bottom: 200px;
+      padding: 0 118px;
   }
 
+
   .steps h1 {
-      position: absolute;
+      position: relative;
       background: linear-gradient(262deg, #FFF 37.74%, #FFF 98.52%);
       background-clip: text;
       -webkit-background-clip: text;
@@ -1084,7 +1088,7 @@
       font-style: normal;
       font-weight: 900;
       line-height: 117.4%;
-      right: 470px;
+      margin-left: 18px;
   }
 
   .steps h1 svg {
@@ -1116,39 +1120,103 @@
       line-height: 117.4%;
   }
 
-  .step-1 {
-      position: absolute;
+  .left-steps {
+      position: relative;
       display: flex;
       flex-direction: column;
-      left: 119px;
+      width: 45%;
+      border-right-width: 6px;
+      border-right-style: solid;
+      gap: 220px;
+      border-image: linear-gradient(rgba(1, 68, 32, 0) 0%, rgba(1, 68, 32, 0.99) 6%, #014420 86%, rgba(1, 68, 32, 0.00) 100%) 6;
+      padding-top: 85px;
   }
 
-  .step-1 h2 {
-      background: linear-gradient(180deg, rgba(6, 255, 121, 0.42) 0.2%, rgba(6, 255, 121, 0.06) 104.54%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: Montserrat;
-      font-size: 200px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 117.4%;
-      -webkit-text-stroke: #06FF79 2px;
-      /* 234.8px */
+  .step {
+      display: flex;
+      flex-direction: column;
   }
 
-  .step-1 h3 {
+  .step h2 {
       color: #FFF;
-      width: 320px;
+      width: 350px;
       font-family: Montserrat;
       font-size: 40px;
       font-style: normal;
       font-weight: 900;
       line-height: 117.4%;
-      margin-bottom: 20px;
-      /* 46.96px */
+      margin: 20px 0;
   }
 
+  .step-1 h2 {
+      width: 340px;
+  }
+
+  .step-1 h2::before,
+  .step-3 h2::before,
+  .step-5 h2::before {
+      position: absolute;
+      margin-top: -113px;
+      right: 0;
+      content: "";
+      width: 396px;
+      height: 6px;
+      border-image: linear-gradient(90deg, rgba(6, 255, 121, 0) 0%, rgba(6, 255, 121, 0.27) 100%)6;
+      border-top-width: 6px;
+      border-top-style: solid;
+  }
+
+  .step div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .step>div svg {
+      position: absolute;
+      left: -118px;
+      top: -45px;
+  }
+
+  .step p {
+      width: 455px;
+      color: #C7C7C7;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+  }
+
+  .right-steps {
+      width: 55%;
+  }
+
+  .step-div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 220px;
+      margin-top: 145px;
+  }
+
+  .step-2 h2::before,
+  .step-4 h2::before,
+  .step-6 h2::before {
+      position: absolute;
+      margin-top: -113px;
+      left: 0;
+      content: "";
+      width: 396px;
+      height: 6px;
+      border-image: linear-gradient(90deg, rgba(6, 255, 121, 0.27) 0%, rgba(6, 255, 121, 0) 70%)6;
+      border-top-width: 6px;
+      border-top-style: solid;
+  }
+
+  /* 
   .step-1 div {
       position: relative;
       left: 0px;
@@ -1189,7 +1257,6 @@
       font-weight: 700;
       line-height: 117.4%;
       -webkit-text-stroke: #06FF79 2px;
-      /* 234.8px */
   }
 
   .step-2 h3 {
@@ -1201,7 +1268,6 @@
       font-weight: 900;
       line-height: 117.4%;
       margin-bottom: 20px;
-      /* 46.96px */
   }
 
   .step-2 div {
@@ -1244,7 +1310,6 @@
       font-weight: 700;
       line-height: 117.4%;
       -webkit-text-stroke: #06FF79 2px;
-      /* 234.8px */
   }
 
   .step-3 h3 {
@@ -1256,7 +1321,6 @@
       font-weight: 900;
       line-height: 117.4%;
       margin-bottom: 20px;
-      /* 46.96px */
   }
 
   .step-3 div {
@@ -1299,7 +1363,6 @@
       font-weight: 700;
       line-height: 117.4%;
       -webkit-text-stroke: #06FF79 2px;
-      /* 234.8px */
   }
 
   .step-4 h3 {
@@ -1311,7 +1374,6 @@
       font-weight: 900;
       line-height: 117.4%;
       margin-bottom: 20px;
-      /* 46.96px */
   }
 
   .step-4 div {
@@ -1354,7 +1416,6 @@
       font-weight: 700;
       line-height: 117.4%;
       -webkit-text-stroke: #06FF79 2px;
-      /* 234.8px */
   }
 
   .step-5 h3 {
@@ -1366,7 +1427,6 @@
       font-weight: 900;
       line-height: 117.4%;
       margin-bottom: 20px;
-      /* 46.96px */
   }
 
   .step-5 div {
@@ -1409,7 +1469,6 @@
       font-weight: 700;
       line-height: 117.4%;
       -webkit-text-stroke: #06FF79 2px;
-      /* 234.8px */
   }
 
   .step-6 h3 {
@@ -1421,7 +1480,6 @@
       font-weight: 900;
       line-height: 117.4%;
       margin-bottom: 20px;
-      /* 46.96px */
   }
 
   .step-6 div {
@@ -1445,6 +1503,7 @@
       line-height: normal;
   }
 
+  */
   .contacts {
       margin-top: 100px;
   }

@@ -292,6 +292,87 @@
 
     /*------------------------ Step -----------------------*/
 
+    .steps {
+        margin-top: 300px;
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+
+    .steps h1 {
+        font-size: 60px;
+    }
+
+    .steps h1 svg {
+        position: absolute;
+        width: 74px;
+        top: -8px;
+    }
+
+    .steps h1 p span {
+        font-size: 33px;
+    }
+
+    .steps h1 p {
+        font-size: 33px;
+    }
+
+    .left-steps {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        border-right-width: 6px;
+        border-right-style: solid;
+        gap: 220px;
+        border-image: linear-gradient(rgba(1, 68, 32, 0) 0%, rgba(1, 68, 32, 0.99) 6%, #014420 86%, rgba(1, 68, 32, 0.00) 100%) 6;
+        padding-top: 85px;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step>svg {
+        width: 160px;
+    }
+
+    .step h2 {
+        width: 260px;
+        font-size: 30px;
+    }
+
+    .step-1 h2 {
+        width: 240px;
+    }
+
+    .step-1 h2::before,
+    .step-3 h2::before,
+    .step-5 h2::before {
+        width: 300px;
+    }
+
+    .step div {
+        gap: 15px;
+    }
+
+    .step>div svg {
+        position: absolute;
+        width: 300px;
+        left: -70px;
+        top: -55px;
+    }
+
+    .step p {
+        width: 345px;
+        font-size: 15px;
+    }
+
+    .right-steps {
+        width: 55%;
+    }
+
     /*------------------------ Contacts -----------------------*/
 
     .contacts div h1,
