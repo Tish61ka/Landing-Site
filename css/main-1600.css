@@ -334,8 +334,16 @@
         flex-direction: column;
     }
 
+    .step-1>svg {
+        width: 150px !important;
+    }
+
     .step>svg {
         width: 160px;
+    }
+
+    .right-steps .step>svg {
+        width: 180px;
     }
 
     .step h2 {
